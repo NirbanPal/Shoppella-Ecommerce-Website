@@ -158,8 +158,8 @@ After running the application, open your browser and visit:
 ![cartAndAdminEndpoints](https://github.com/NirbanPal/Shoppella-Ecommerce-Website/blob/main/endPoints-SS/customerAndAddressEndpoints.png)
 ![customerAndAddressEndpoints](https://github.com/NirbanPal/Shoppella-Ecommerce-Website/blob/main/endPoints-SS/customerAndAddressEndpoints.png)
 ![orderAndShipperEndpoints](https://github.com/NirbanPal/Shoppella-Ecommerce-Website/blob/main/endPoints-SS/orderAndShipperEndpoints.png)
-![paymentAndLoginEndpoints](https://github.com/NirbanPal/Shoppella-Ecommerce-Website/blob/main/endPoints-SS/paymentAndLoginEndpoints.png)
 ![productEndpoints](https://github.com/NirbanPal/Shoppella-Ecommerce-Website/blob/main/endPoints-SS/productEndpoints.png)
 ![reviewAndShippingEndpoints](https://github.com/NirbanPal/Shoppella-Ecommerce-Website/blob/main/endPoints-SS/reviewAndShippingEndpoints.png)
+![paymentAndLoginEndpoints](https://github.com/NirbanPal/Shoppella-Ecommerce-Website/blob/main/endPoints-SS/paymentAndLoginEndpoints.png)
 
 
