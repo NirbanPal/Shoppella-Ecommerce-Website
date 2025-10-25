@@ -17,7 +17,7 @@ Designed with scalability, security, and clean architecture in mind, this API se
 
 - Bulk product upload via Excel
 - Bulk image upload and Cloudinary integration
-- Create, update, delete, and manage all products, users, shippers, and orders
+- Create, update, delete, and manage all products, users, shippers, orders and many more.
 
 ### ✅ User Capabilities
 
