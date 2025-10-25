@@ -54,11 +54,7 @@ Designed with scalability, security, and clean architecture in mind, this API se
 
 A layered monolithic architecture following industry standards:
 
-Controller → Service → Repository → Entity (Model)
-          ↓
-     DTOs & Mappers
-          ↓
-     Global Exception Handler
+![ER_Diagram](https://github.com/NirbanPal/Shoppella-Ecommerce-Website/blob/main/EcomMonolithic.png)
 
 - Spring Security + JWT → ensures secure access across roles
 - MySQL → serves as persistent data layer
