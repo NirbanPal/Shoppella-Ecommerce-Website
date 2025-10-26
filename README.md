@@ -127,6 +127,21 @@ RAZORPAY_SECRET_ID=your-secret-id
 RAZORPAY_WEBHOOK_SECRET=your-webhook-secret
 ```
 
+### 👨‍💻 Admin Access Setup
+
+Before using the Admin APIs, create an admin account manually in the MySQL database:
+```bash
+# Suppose your DB_NAME is ecomdb. So put your db name accordingly.
+USE ecomdb;
+
+INSERT INTO users (email, password, first_name, last_name, phone_number,user_role,user_account_status)
+VALUES ('admin@gmail.com', '$2a$10$6mMR41Be5L4ofFPvHmaNq.fFt9taTYT.T0UQda3R2bWhVmKCuRA.a', 'Admin', 'Admin', '1234567890','ROLE_ADMIN','ACTIVE');
+```
+#### Credentials:
+- Username/email: admin@gmail.com
+
+- Password: admin#880
+
 ### 🐳 Run with Docker Container
 
 You can easily containerize and run the eCommerce backend using Docker, ensuring consistent environments across development and production.
@@ -172,22 +187,6 @@ Make sure you have the following installed:
   ```bash
   docker-compose down
   ```
-
-
-### 👨‍💻 Admin Access Setup
-
-Before using the Admin APIs, create an admin account manually in the MySQL database:
-```bash
-# Suppose your DB_NAME is ecomdb. So put your db name accordingly.
-USE ecomdb;
-
-INSERT INTO users (email, password, first_name, last_name, phone_number,user_role,user_account_status)
-VALUES ('admin@gmail.com', '$2a$10$6mMR41Be5L4ofFPvHmaNq.fFt9taTYT.T0UQda3R2bWhVmKCuRA.a', 'Admin', 'Admin', '1234567890','ROLE_ADMIN','ACTIVE');
-```
-#### Credentials:
-- Username/email: admin@gmail.com
-
-- Password: admin#880
 
 ### 📘 API Documentation
 
