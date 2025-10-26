@@ -7,7 +7,10 @@ import org.springframework.data.repository.query.Param;
 
 import Ecom.Model.CartItem;
 import jakarta.transaction.Transactional;
+import org.springframework.stereotype.Repository;
 
+
+@Repository
 public interface CartItemRepository extends JpaRepository<CartItem, Integer> {
 
 	@Transactional

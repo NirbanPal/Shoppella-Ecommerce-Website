@@ -7,7 +7,9 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import Ecom.Model.Address;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface AddressRepository extends JpaRepository<Address, Integer> {
 	
 	 @Query("SELECT a FROM Address a  WHERE a.user.userId = :userId")

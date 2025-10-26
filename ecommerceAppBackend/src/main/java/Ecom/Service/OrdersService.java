@@ -11,7 +11,6 @@ import Ecom.Exception.OrdersException;
 import Ecom.Model.Orders;
 import Ecom.ModelDTO.OrdersDTO;
 
-@Service 
 public interface OrdersService {
 	
 	public OrdersDTO placeOrder(Integer userId, Integer addressId) throws OrdersException;

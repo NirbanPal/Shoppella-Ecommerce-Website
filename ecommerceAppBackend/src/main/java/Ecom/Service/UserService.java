@@ -11,7 +11,6 @@ import Ecom.ModelDTO.CustomerDTO;
 import Ecom.ModelDTO.UserDTO;
 
 
-@Service
 public interface UserService {
 
 	public User getUserByEmailId(String emailId)throws UserException;

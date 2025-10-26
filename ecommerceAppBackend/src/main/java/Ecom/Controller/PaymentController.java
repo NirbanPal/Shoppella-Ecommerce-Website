@@ -20,7 +20,6 @@ public class PaymentController {
 
 	private final PaymentService paymentService;
 
-
 	@PostMapping("/order")
 	public ResponseEntity<CreatePaymentOrderResponseDTO> createOrder(
 			@RequestHeader(value = "Idempotency-Key", required = false) String idemKey,

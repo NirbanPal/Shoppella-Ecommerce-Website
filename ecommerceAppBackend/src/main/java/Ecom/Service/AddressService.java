@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import Ecom.Exception.AddressException;
 import Ecom.Model.Address;
 
-@Service
 public interface AddressService {
 	
 	public Address addAddressToUser(Integer userId,Address address) throws AddressException;
