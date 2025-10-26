@@ -49,6 +49,7 @@ Designed with scalability, security, and clean architecture in mind, this API se
 | **Payment Gateway**   | Razorpay                     |
 | **File Storage**      | Cloudinary                   |
 | **Version Control**   | Git & GitHub                 |
+| **containerization**  | Docker                       |
 
 ## 🧩 Architecture Overview
 
@@ -96,11 +97,10 @@ Ensure you have the following installed:
   ```
 
 ### 🗄️ Configure the Database
-  Update your .env (or .yml) file located at
-src/main/resources/.env
+  Update your .env file located at ecommerceAppBackend(root folder):
   ```bash
-  DB_HOST=
-  DB_PORT=
+  DB_HOST=localhost
+  DB_PORT=3306
   DB_NAME=
   DB_USERNAME=
   DB_PASSWORD=
@@ -110,7 +110,7 @@ src/main/resources/.env
 To enable image storage:
 - Sign up at <a href="https://cloudinary.com/users/login">Cloudinary</a>.
 - Obtain credentials from your Cloudinary dashboard.
-- Add the following to your .env file:
+- Add the following to your .env file located at ecommerceAppBackend(root folder):
 ```bash
 CLOUDINARY_NAME=your-cloud-name
 CLOUDINARY_KEY=your-api-key
@@ -120,12 +120,59 @@ CLOUDINARY_SECRET=your-api-secret
 To enable online payments:
 - Register at <a href="https://razorpay.com/docs/payments/dashboard/account-settings/api-keys/#test-mode-api-keys">Razorpay</a>.
 - Get your credentials under Settings → API Keys.
-- Add them to your configuration:
+- Add them to your .env file located at ecommerceAppBackend(root folder):
 ```bash
 RAZORPAY_KEY_ID=your-key-id
 RAZORPAY_SECRET_ID=your-secret-id
 RAZORPAY_WEBHOOK_SECRET=your-webhook-secret
 ```
+
+### 🐳 Run with Docker Container
+
+You can easily containerize and run the eCommerce backend using Docker, ensuring consistent environments across development and production.
+
+- #### 🧱 Prerequisites
+Make sure you have the following installed:
+
+  - Docker (v20+)
+
+  - Docker Compose (optional, for multi-container setup)
+
+- #### Clone the repository
+  ```bash
+  git clone https://github.com/NirbanPal/Shoppella-Ecommerce-Website.git
+  ```
+
+- #### Navigate to project directory
+  ```bash
+  cd ecommerceAppBackend
+  ```
+- #### 🗄️ Configure the env variables as discussed before.
+  Update your .env file located at ecommerceAppBackend(root folder):
+  ```bash
+  DB_HOST=mysql-db
+  DB_PORT=3306
+  DB_NAME=
+  DB_USERNAME=
+  DB_PASSWORD=
+
+  CLOUDINARY_NAME=your-cloud-name
+  CLOUDINARY_KEY=your-api-key
+  CLOUDINARY_SECRET=your-api-secret
+
+  RAZORPAY_KEY_ID=your-key-id
+  RAZORPAY_SECRET_ID=your-secret-id
+  RAZORPAY_WEBHOOK_SECRET=your-webhook-secret
+  ```
+- #### Build and Start the Docker Containers
+  ```bash
+  docker-compose up --build
+  ```
+- #### Stopping the Containers
+  ```bash
+  docker-compose down
+  ```
+
 
 ### 👨‍💻 Admin Access Setup
 
