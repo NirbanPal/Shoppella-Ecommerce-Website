@@ -147,7 +147,7 @@ VALUES ('admin@gmail.com', '$2a$10$6mMR41Be5L4ofFPvHmaNq.fFt9taTYT.T0UQda3R2bWhV
 You can easily containerize and run the eCommerce backend using Docker, ensuring consistent environments across development and production.
 
 - #### 🧱 Prerequisites
-Make sure you have the following installed:
+  Make sure you have the following installed:
 
   - Docker (v20+)
 
