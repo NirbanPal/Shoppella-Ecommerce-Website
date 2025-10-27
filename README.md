@@ -49,7 +49,7 @@ Designed with scalability, security, and clean architecture in mind, this API se
 | **Payment Gateway**   | Razorpay                     |
 | **File Storage**      | Cloudinary                   |
 | **Version Control**   | Git & GitHub                 |
-| **containerization**  | Docker                       |
+| **Containerization**  | Docker                       |
 
 ## 🧩 Architecture Overview
 
@@ -161,6 +161,10 @@ You can easily containerize and run the eCommerce backend using Docker, ensuring
 - #### Navigate to project directory
   ```bash
   cd ecommerceAppBackend
+  ```
+- #### Change in application.properties file located at ecommerceAppBackend\src\main\resources
+  ```bash
+  spring.profiles.active=docker
   ```
 - #### 🗄️ Configure the env variables as discussed before.
   Update your .env file located at ecommerceAppBackend(root folder):
